@@ -1,0 +1,275 @@
+/* import de polices externes, qui viennent de Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,9008&display=swap');
+/*règles qui s'appliquent à tous les éléments de la page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*règles qui s'appliquent à tous les éléments dans le corps de la page*/
+body {
+    background-color: rgb(220, 221, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*Règles relatives aux classes, classes et élements qu'elles contiennent*/
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1.05fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_Side {
+    position:relative;
+    background: #718289;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(27, 27, 27, 0.2);
+}
+
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /*border-radius: 50%;*/
+    overflow: hidden;
+}
+
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.contactInfo {
+    padding-top: 40px;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+
+}
+
+.contactInfo.education h5 {
+    color: #fff;
+    font-weight: 400;
+
+}
+
+.contactInfo.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 400;
+}
+
+.contactInfo.education h4 {
+    color: #fff;
+    font-weight: 200;
+}
+
+.contactInfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:#fff;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #aebec5;
+}
+
+
+
+.container .right_Side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child() {
+    margin-bottom: 0;
+}
+
+.about .box {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction:column; */
+    /* margin: 20px 0; */
+}
+
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5, .about .box .text h4 {
+    padding-top: 8px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color:#515151;
+    font-weight: 500;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(38, 38, 38);
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #515151;
+    font-weight: 400;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #c1cacf;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #343435;
+
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.interest ul li .fa {
+    color:rgb(14, 14, 14);
+    font-size: 18px;
+    width: 20px;
+    padding-right: 30px;
+}
+
+/*Plus de règles CSS pour paufiner le côté responsive de la page*/
+
+/*Rêquete média qui s'applique à un écran qui ne dépasse 1000px de largeur*/
+@media(max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*Rêquete média qui s'applique à un écran qui ne dépasse 600px de largeur*/
+@media(max-width: 600px){
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .year_company{
+        margin-bottom: 5px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* @media(max-width: 800px) {
+    .about .box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+     */

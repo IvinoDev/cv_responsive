@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Liaison du fichier CSS local à la page -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Liaison de Font Awesome à la page, pour utiliser des icônes de cette plateforme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mon Curriculum Vitae</title>
+</head>
+<body>
+    <!-- Div qui contient toute la partie gauche du CV -->
+    <div class="container">
+            <div class="left_Side">
+                <div class="profileText">
+                    <div class="imgBx">
+                        <img src="img3.jpg" alt="mon visage">
+                </div>
+                    <h2>Mariam D Kayantao<br><span>Développeuse Full-Stack</span></h2>
+                </div>
+                <!-- Partie infos personnelles -->
+                <div class="contactInfo">
+                    <h2 class="title">Informations Professionnelles</h2>
+                    <ul>
+                        <li>
+                            <!-- Ajout d'icône de Font Awesome aux listes à puces -->
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">Sokorodji, Bamako</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text">+223 66 32 69 02</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="text">mariamkayantao@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                            <span class="text">@IvinoDev</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-gitlab" aria-hidden="true"></i></span>
+                            <span class="text">@Kayantao</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                            <span class="text">@mariam-kayantao-15676b1bb</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Partie Informatique -->
+                <div class="contactInfo education">
+                    <h2 class="title">Informatique</h2>
+                    <ul>
+                        <li>
+                            <h4>Outils  d'intégration et de développement de contenu: Github, Gitlab, Bamboo, Jenkins </h4>
+                        </li>
+                        <li>
+                            <h4>CMS: Wordpress, Drupal, Contao, Joomla!</h4>
+                        </li>
+                        <li>
+                            <h4>Système d'exploitation: GNU/Linux, MacOs, FreeBSD, Windows</h4>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Partie Langues -->
+                <div class="contactInfo language">
+                    <h2 class="title">Langues</h2>
+                    <ul>
+                        <li>
+                            <!-- Le span d'au dessus avec le nom de la langue -->
+                            <span class="text">Français</span>
+                            <!-- Le span d'au dessous contenant le pourcentage -->
+                            <div class="percent">
+                                <!-- Application direct de la taille de la largeur ici -->
+                                <div style="width: 85%;"></div>
+                            </div>
+                        </li>   
+                        <li>
+                            <span class="text">Anglais</span>
+                            <div class="percent">
+                                <div style="width: 65%;"></div>
+                            </div>
+                        </li>  
+                        <li>
+                            <span class="text">Bambara</span>
+                            <div class="percent">
+                                <div style="width: 48%;"></div>
+                            </div>
+                        </li>  
+                        <li>
+                            <span class="text">Darija</span>
+                            <div class="percent">
+                                <div style="width: 40%;"></div>
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+            <!-- Div contenant toute la partie droite du CV -->
+            <div class="right_Side">
+                <!-- Mini section à propos -->
+                <div class="about">
+                    <p>
+                        Titulaire d'un certifat Simplon en développement Full-Stack, puis diplômée en programmation Web à Orange Digital Kalanso, j'ai été développeuse front-end puis back-end sur différents frameworks au sein de grands groupes.<br>
+                        Je cherche aujourd'hui une mission full stack web ou mobile
+                    </p>
+                </div>
+                <!-- Partie expériences pro -->
+                <div class="about">
+                    <h2 class="title2">Expériences Professionnelles</h2>
+                    <!-- Création d'une div box qui regroupe deux sous div -->
+                    <div class="box">
+                        <!-- Première expérience -->
+                        <!-- <div class="box_container"> -->
+                            <div class="year_company">
+                                <h5>De 2021 à 2022</h5>
+                                <h5>PyDev Inc.</h5>
+                            </div>
+                            <!-- Div pour regrouper tous le nom des métiers, et leur description  -->
+                            <div class="text">
+                                <h4>Développeuse back-end Python</h4>
+                                <div>
+                                    Au sein d'une équipe de 5 développeurs et cloud architects, j'ai développé certaines évolutions ainsi que des correctifs sur un projet interne développé en Python, destiné à la maintenance d'appareils aéronefs :
+                                    <ul>
+                                        <li>Réalisation à temps et validation par les pairs de 96% des tâches qui m'ont été affectées durant les sprints.</li>
+                                        <li>Améliorations des performances de certaines fonctions de traitement en masse sur des documents NoSQL</li>
+                                        <li>Nouveaux endpoints sur une API GraphQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        
+                        <!-- Seconde expérience -->
+                        <!-- <div class="box_container"> -->
+                            <div class="year_company">
+                                <h5>DE 2020 À 2021</h5>
+                                <h5>SCRIPTDEV INC.</h5>
+                            </div>
+                            <!-- Div pour regrouper tous le nom des métiers, et leur description  -->
+                            <div class="text">
+                                <h4>DÉVELOPPEUSE FRONT-END REACTJS</h4>
+                                <div>
+                                    Encadré par des ingénieurs et intégrateurs front-end ainsi que des développeurs Javascript.
+                                    J'ai occupé plusieurs missions d'améliorations sur un module de la messagerie de notre projet iTalk en version Desktop :                            
+                                    <ul>
+                                        <li>Mise en place de tests unitaires automatisés.</li>
+                                        <li>Amélioration et optimisation de composants ReactJS en TypeScript.</li>
+                                        <li>Mise à jour de librairies et correctifs de compatibilité.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        
+
+                        <!-- Troisième expérience -->
+                        <!-- <div class="box_container"> -->
+                            <div class="year_company">
+                                <h5>DE 2018 À 2020</h5>
+                                <h5>ASSURANCES BLEUES</h5>
+                            </div>
+                            <!-- Div pour regrouper tous le nom des métiers, et leur description  -->
+                            <div class="text">
+                                <h4>AGENT D'ASSURANCE</h4>
+                                <div>
+                                    Au sein d'une équipe de 5 développeurs et cloud architects, j'ai développé certaines évolutions ainsi que des correctifs sur un projet interne développé en Python, destiné à la maintenance d'appareils aéronefs :
+                                    <ul>
+                                        <li>Chargée de la clientèle et productrice de contrats.</li>
+                                        <li>Démarchage de clients potentiels par le biais de techniques de marketing direct, dont le publipostage et les appels téléphoniques.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <!-- </div>  -->
+                    </div>
+                </div>
+
+                <!--Partie Formation-->
+                <div class="about formation">
+                        <h2 class="title2">Formation</h2> 
+                        <div class="box">
+                                <div class="year_company">
+                                    <h5>2022</h5>
+                                </div>
+                                <div class="text">
+                                    <h4>Orange Digital Kalanso</h4>
+                                    <p>Formation en développement Web et Mobile</p>
+                                </div>  
+                                <div class="year_company">
+                                    <h5>2016 - 2022</h5>
+                                </div>
+                                <div class="text">
+                                    <h4>Faculté des Sciences Economiques et de Gestion (FSEG) - Badalabougou</h4>
+                                    <p>Licence Professionnelle en Assurance Banque Finance</p>
+                                </div>
+                                <div class="year_company">
+                                    <h5>2016 - 2018</h5>
+                                </div>
+                                <div class="text">
+                                    <h4>Centre de Formation Professionnelle à l'Assurance (CFPA) - ACI 2000</h4>
+                                    <p>Formation modulaire en Assurance</p>
+                                </div>
+                                <div class="year_company">
+                                    <h5>2013 - 2016</h5>
+                                </div>
+                                <div class="text">
+                                    <h4>Lycée Mary Saint Claire - ACI 2000</h4>
+                                    <p>Baccalauréat en Sciences Economiques</p>
+                                </div>    
+                        </div>
+                        
+
+                    <!-- Partie Certifications -->
+                    <div class="about certification">
+                            <h2 class="title2">Certifications</h2>
+                            <div class="box">
+                                <div class="year_company">
+                                    <h5>2022</h5>
+                                </div>    
+                                <div class="text">
+                                    <h4>Simplon Développement Full-Stack</h4>
+                                    <p>ID: 190 251-504</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                    <div class="year_company">
+                                        <h5>2021</h5>
+                                    </div>    
+                                    <div class="text">
+                                        <h4>MIMO Développement Android</h4>
+                                        <p>ID: 173 212 098</p>
+                                    </div>
+                            </div>   
+                            <div class="box">
+                                    <div class="year_company">
+                                        <h5>2020</h5>
+                                    </div>    
+                                    <div class="text">
+                                        <h4>MIMO Développement Web</h4>
+                                        <p>ID: 191 253-514</p>
+                                    </div>
+                            
+                    </div>
+                    <!-- Partie Compétences -->
+                    <div class="about skills">
+                        <h2 class="title2">Compétences</h2>
+                        <div class="box">
+                            <h4>HTML / CSS</h4>
+                            <div class="percent">
+                                <div style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>PHP</h4>
+                            <div class="percent">
+                                <div style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>MySQL</h4>
+                            <div class="percent">
+                                <div style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Javascript</h4>
+                            <div class="percent">
+                                <div style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>React JS</h4>
+                            <div class="percent">
+                                <div style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Vue.JS</h4>
+                            <div class="percent">
+                                <div style="width: 69%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Kotlin</h4>
+                            <div class="percent">
+                                <div style="width: 72%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Python</h4>
+                            <div class="percent">
+                                <div style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Django</h4>
+                            <div class="percent">
+                                <div style="width: 79%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Bash</h4>
+                            <div class="percent">
+                                <div style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Git</h4>
+                            <div class="percent">
+                                <div style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Figma</h4>
+                            <div class="percent">
+                                <div style="width: 65%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Adobe XD</h4>
+                            <div class="percent">
+                                <div style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Google Workspace</h4>
+                            <div class="percent">
+                                <div style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Partie Centre d'intérêts -->
+                    <div class="about interest">
+                        <h2 class="title2">Centres d'intérêt</h2>
+                        <ul>
+                            <!-- Utilisation d'icônes de Font Awesome pour remplacer les puces des listes -->
+                            <li><i class="fa fa-gamepad" aria-hidden="true"></i>Jeux Vidéos</li>
+                            <li><i class="fa fa-motorcycle" aria-hidden="true"></i>Moto</li>
+                            <li><i class="fa fa-book" aria-hidden="true"></i>Lecture</li>
+                            <li><i class="fa fa-cutlery" aria-hidden="true"></i>Cuisine</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
